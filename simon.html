@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/simon.css">
+    <link rel="icon" href="../IMAGES/simon-says-removebg-preview.png">
+</head>
+<body>
+    <nav>
+        <div id="#logo">
+            SIMON SAYS
+        </div>
+        <button id="reload-btn">reset <i id="icon" class="fa-solid fa-rotate-right"></i></button>
+    </nav>
+    <div id="div-h2">
+        <h2 id="h2">Press any key to start</h2>
+    </div>
+    <h3 id="highScore">High Score : 0</h3>
+
+    <div class="btn-container">
+       <div class="line-1"> 
+            <div class="btn red" type="button" id="red"></div>
+            <div class="btn green" type="button" id="green"></div>
+        </div>
+        <div class="line-2">
+            <div class="btn blue" id="blue" type="button"></div>
+            <div class="btn yellow" id="yellow" type="button"></div>
+        </div>
+    </div>
+    <div id="rules">
+        <ul>
+            <li id="instructions"><i id="gamepad" class="fa-solid fa-gamepad"></i> How to play</li>
+            <li class="ins"><i class="fa-solid fa-scroll"></i> Press any keyboard key to begin.</li>
+            <li class="ins"><i class="fa-solid fa-scroll"></i> A color will flash.</li>
+            <li class="ins"><i class="fa-solid fa-scroll"></i> Remember the order as new colors get added.</li>
+            <li class="ins"><i class="fa-solid fa-scroll"></i> Click the buttons in the same order.</li>
+            <li class="ins"><i class="fa-solid fa-scroll"></i> Get it right? You move to the next level.</li>
+            <li class="ins"><i class="fa-solid fa-scroll"></i> One new color gets added each time.</li>
+            <li class="ins"><i class="fa-solid fa-scroll"></i> Click the wrong color? The game ends.</li>
+            <li class="ins"><i class="fa-solid fa-scroll"></i> Press a key to start again or click "Reset."</li>
+        </ul>
+    </div>
+    <script src="../JavaScript/simon.js"></script>
+</body>
+</html>
